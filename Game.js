@@ -47,15 +47,15 @@ var y;
       for(var plr in allPlayers){
         index=index+1
         y=y+200
-        x=displayHeight-allPlayers[plr].distance
+        x=displayWidth-allPlayers[plr].distance
         cars[index-1].x=x
         cars[index-1].y=y
 
         if (index === player.index)
         {
           cars[index-1].shapeColor="red"
-          camera.position.y=displayWidth
-          camera.position.x=cars[index-1].x
+          camera.position.y=displayHeight/2
+          camera.position.x=cars[index-1].y
         }
       }
     }
